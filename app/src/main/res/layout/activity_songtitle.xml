@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".songtitle">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_baseline_arrow_back_24"></ImageView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="500dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_width="900dp"
+            android:layout_height="100dp"
+            android:textAlignment="textStart"
+            android:text="SONG TITILE"
+            android:textColor="@color/white"
+            android:textSize="30dp"></TextView>
+
+</LinearLayout>
+</LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/artist"
+        android:layout_below="@id/top"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="By Artist"
+            android:textColor="#FFC107"
+            android:textSize="30dp"></TextView>
+    </LinearLayout>
+    <LinearLayout
+
+        android:id="@+id/black"
+        android:layout_below="@id/artist"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/extra"
+        android:layout_below="@id/black"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:weightSum="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:background="@drawable/account"></ImageView>
+        </LinearLayout>
+        <RelativeLayout
+
+           android:layout_below="@id/extra"
+            android:layout_weight="0.75"
+            android:layout_width="300dp"
+            android:layout_gravity="right"
+            android:layout_height="70dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/chat">
+
+            </ImageButton>
+
+            <TextView
+                android:layout_width="400dp"
+                android:layout_height="60dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="What an amazing song"
+                android:textColor="@color/white"
+                android:textSize="20dp"></TextView>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/comment"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_below="@+id/extra"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            >
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="20dp"
+        android:gravity="right"
+        android:layout_height="100dp"
+        android:layout_above="@+id/icons"
+        android:weightSum="2"
+></LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="600dp"
+        android:layout_height="200dp"
+        android:layout_above="@+id/icons">
+
+        <LinearLayout
+
+            android:layout_width="700dp"
+            android:layout_height="60dp"
+            android:gravity="right">
+
+            <ImageView
+
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_baseline_play_arrow_24">
+
+            </ImageView>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="500dp"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:layout_width="340dp"
+                android:layout_height="60dp"
+                android:src="@drawable/chat"></ImageView>
+
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="Post a comment"
+                android:textColor="@color/white"
+                android:textSize="20dp"></EditText>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/icons"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/comment"
+        android:background="#605757"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/heart">
+
+            </ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_baseline_add_24"></ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_baseline_search_24"></ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_baseline_access_time_24"></ImageView>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/icons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="#605757"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:text="Liked"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textColor="#D4B300"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:text="Add"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textColor="#D4B300"></TextView>
+        </LinearLayout> <LinearLayout
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:text="Search"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="#D4B300"></TextView>
+    </LinearLayout> <LinearLayout
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="28dp"
+            android:text="Listen Later"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:textColor="#D4B300"></TextView>
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

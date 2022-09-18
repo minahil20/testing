@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:weightsum="1"
+    tools:context=".createacc"
+    >
+    <LinearLayout
+        android:weight="0.2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textAlignment="viewEnd"
+            android:textSize="30dp"
+            android:text="Sign In">
+
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/musify"
+        android:weight="0.2"
+        android:layout_width="150dp"
+        android:layout_height="250dp"
+        >
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:src="@drawable/musify"
+            >
+
+        </ImageView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/musifytext"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/musify"
+        android:weight="0.2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Musify"
+            android:textColor="@color/white"
+            android:textSize="40dp">
+
+        </TextView>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/fb"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/musifytext"
+        android:weightsum="1">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/buttonsforfgc">
+
+        </ImageView>
+
+        <TextView
+            android:weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif"
+            android:text="Continue with Facebook"
+            android:textAlignment="center"
+            android:textColor="@color/purple_500"
+            android:textSize="20dp">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/fb"
+            android:weight="0.5">
+
+        </ImageView>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@id/fb"
+        android:id="@+id/black"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weight="0.2"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/google"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/black">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/buttonsforfgc">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif"
+            android:text="Continue with Google"
+            android:textAlignment="center"
+            android:textColor="#F11404"
+            android:textSize="20dp"
+            android:weight="0.5">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="100dp"
+            android:src="@drawable/google"
+            android:weight="0.5">
+
+        </ImageView>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@id/google"
+        android:id="@+id/black2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/createacc"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/black2">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/buttonsforfgc">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif"
+            android:text="Create Account"
+            android:textAlignment="center"
+            android:textColor="#FF9800"
+            android:textSize="20dp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

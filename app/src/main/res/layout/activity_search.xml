@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".search">
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_baseline_arrow_back_24"></ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/search"
+            android:layout_width="500dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="500dp"
+                android:layout_height="60dp"
+                android:layout_weight="0.5"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/buttonsforfgc"></ImageView>
+
+                <EditText
+                    android:layout_width="500dp"
+                    android:layout_height="100dp"
+                    android:text="   Search"
+                    android:textColor="#FFC107"
+                    android:textSize="20dp"></EditText>
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="550dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9"
+                android:layout_gravity="right">
+                <TextView
+                    android:layout_width="500dp"
+                    android:layout_height="100dp"
+                    android:text="   Next"
+                    android:textColor="#FFC107"
+                    android:textSize="20dp"></TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/black"
+        android:layout_below="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"></LinearLayout>
+    <LinearLayout
+        android:id="@+id/recent"
+        android:layout_below="@+id/black"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Recent Searches"
+            android:fontFamily="sans-serif"
+            android:textSize="23dp"
+           android:textColor="#FFC107"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/despacito"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/recent"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <LinearLayout
+            android:layout_weight="2.1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/despacito"></ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Song Name"
+                    android:textColor="@color/white"
+                    android:textSize="27dp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="230dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Artist"
+                    android:textColor="#FFC107"
+                    android:textSize="20dp"></TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="0.2"
+            android:layout_width="60dp"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_cancel_24"></ImageView>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/despacito2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/despacito"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <LinearLayout
+            android:layout_weight="2.1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/play"></ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Playlist Name"
+                    android:textColor="@color/white"
+                    android:textSize="27dp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="230dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Artist"
+                    android:textColor="#FFC107"
+                    android:textSize="20dp"></TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="0.2"
+            android:layout_width="60dp"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_cancel_24"></ImageView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/despacito3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/despacito2"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <LinearLayout
+            android:layout_weight="2.1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/play"></ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Playlist Name"
+                    android:textColor="@color/white"
+                    android:textSize="27dp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="230dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Artist"
+                    android:textColor="#FFC107"
+                    android:textSize="20dp"></TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="0.2"
+            android:layout_width="60dp"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_cancel_24"></ImageView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@id/black2"
+        android:layout_below="@id/despacito3"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"></LinearLayout>
+    <LinearLayout
+        android:id="@+id/icons"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/black2"
+        android:background="#605757"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/heart">
+
+            </ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_baseline_add_24"></ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_baseline_search_24"></ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_baseline_access_time_24"></ImageView>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/icons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="#605757"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:text="Liked"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textColor="#D4B300"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:text="Add"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textColor="#D4B300"></TextView>
+        </LinearLayout> <LinearLayout
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:text="Search"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="#D4B300"></TextView>
+    </LinearLayout> <LinearLayout
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="28dp"
+            android:text="Listen Later"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:textColor="#D4B300"></TextView>
+    </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

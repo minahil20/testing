@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Playlists">
+
+
+    <RelativeLayout
+        android:id="@+id/tb"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:weightsum="1"
+        android:gravity="right"
+
+        >
+
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/account"
+            android:padding="10dp"
+           >
+
+        </ImageButton>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/tb1"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:weightsum="1"
+        android:gravity="left"
+
+        >
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/menu"
+            android:padding="10dp">
+
+        </ImageButton>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/playlist"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/tb1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Playlists"
+            android:fontFamily="sans-serif"
+            android:textSize="40dp"
+            android:textColor="@color/white"
+            >
+
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layer1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/playlist"
+        android:orientation="horizontal"
+        android:weightSum="3">
+         <LinearLayout
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:background="@drawable/play">
+
+         </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/play">
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/play">
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layer2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/layer1"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#FFEB3B"
+            android:textSize="20dp"
+            android:text="Playlist 1">
+
+        </TextView>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#FFEB3B"
+            android:textSize="20dp"
+            android:text="Playlist 2">
+
+        </TextView>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#FFEB3B"
+            android:textSize="20dp"
+            android:text="Playlist 3">
+
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/artist"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/layer2">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Artists"
+            android:fontFamily="sans-serif"
+            android:textSize="40dp"
+            android:textColor="@color/white"
+            >
+
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/artists"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/artist"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/atif">
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/atif">
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/atif">
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layer3"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/artists"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#FFEB3B"
+            android:textSize="20dp"
+            android:text="Artist 1">
+
+        </TextView>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#FFEB3B"
+            android:textSize="20dp"
+            android:text="Artists 2">
+
+        </TextView>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#FFEB3B"
+            android:textSize="20dp"
+            android:text="Artist 3">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/layer3"
+        android:id="@+id/layer4"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:weightSum="1"
+        android:orientation="horizontal"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/songname1"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_below="@+id/layer3"
+        android:background="@color/black"
+        android:orientation="horizontal">
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/songname2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/songname1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/songicon"></ImageView>
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/icons"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/songname2"
+        android:background="#605757"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/heart">
+
+            </ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_baseline_add_24"></ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_baseline_search_24"></ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_baseline_access_time_24"></ImageView>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/icons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="#605757"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+               android:text="Liked"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textColor="#D4B300"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:text="Add"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textColor="#D4B300"></TextView>
+        </LinearLayout> <LinearLayout
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:text="Search"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="#D4B300"></TextView>
+    </LinearLayout> <LinearLayout
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="28dp"
+            android:text="Listen Later"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:textColor="#D4B300"></TextView>
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/songname1"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/songicon"></ImageView> />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/songname3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/songname1"
+
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text=" Song Name"
+                android:textColor="#D4B300"
+                android:textSize="23dp"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_baseline_skip_previous_24"></ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_baseline_play_arrow_24"></ImageView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_baseline_skip_next_24"></ImageView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
